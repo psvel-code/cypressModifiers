@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+Cypress.LocalStorage.clear = function (keys, ls, rs) {
+};
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

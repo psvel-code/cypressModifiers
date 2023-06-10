@@ -5,7 +5,12 @@ describe("signIn page", () => {
     cy.visit(signInPage.webPageUrl);
   });
   it("signIn", () => {
-    signInPage.elements.matFormField.eq(0).type("plancheck@mailinator.com");
-    signInPage.elements.matFormField.eq(1).type("Admin@1234");
+    signInPage.elements.matFormField().eq(0).type(signInPage.email);
+    signInPage.elements.matFormField().eq(1).type(signInPage.password);
+    signInPage.elements.signIn().click();
+    signInPage.elements.products().click();
+    cy.wait(3000);
+    signInPage.elements.modifiers().click();
+    cy.wait(3000);
   });
 });

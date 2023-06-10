@@ -32,6 +32,7 @@ class modifiers {
         '[style="flex-direction: column; box-sizing: border-box; display: flex; place-content: center; align-items: center;"] > .modifier-text-content > .modifier-heading-text'
       ),
     modifierButton: () => cy.get('[data-control="link-button"]'),
+
   };
 }
 export default modifiers;
